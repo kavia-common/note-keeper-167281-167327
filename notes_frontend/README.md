@@ -1,75 +1,38 @@
-# Nuxt Minimal Starter
+# Note Keeper — Ocean Professional (Nuxt 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern notes application with full CRUD using mock/local storage, styled with the Ocean Professional theme (blue primary, amber accents, rounded corners, soft shadows, smooth transitions).
 
-## Setup
+## Features
+- Create, read, update, delete notes (mocked, persisted to `localStorage`)
+- Search notes in the top bar
+- Pin/unpin notes (pinned float to top)
+- Ocean Professional theme across layout (sidebar, topbar, content)
+- Minimalist UI with rounded corners and subtle shadows
+- Responsive layout and compact grid option
 
-Make sure to install dependencies:
+## Tech
+- Nuxt 3 + Vue 3
+- Pinia for state management
+- No backend required (mock storage)
+
+## Development
+
+Install deps and start:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Open http://localhost:3000
 
-Build the application for production:
+## Build
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Notes
+- Data is saved in your browser storage under the key `nk_notes`.
+- To reset, clear localStorage for the site.
